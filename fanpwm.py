@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # Autor M. Velsmid
+# version: 1.1
 
 import time
 import sys
@@ -12,7 +13,7 @@ cakaj = 10       # repeat control temerature
 Hz = 30          # frekquency PWM
 advanc = 0       # 0 off - 1 on  /decrease of temperature to min.
 R = 3            # difference min. temepratre from cooling down  /it must be turned on advanc   
-RT = 60          # time in seconds to re-compare the temperature
+RT = 120          # time in seconds to re-compare the temperature
 
 # config
 GPIO.setmode(GPIO.BCM)
@@ -85,8 +86,10 @@ try:
                            # print(time.ctime(),'speed-', s+s2) 
   
         else:
-                s=0.0       
-    
+                s=0.0  
+            
+        if(fspeed > 100):
+                fspeed=100
         fan.ChangeDutyCycle(fspeed)
         time.sleep(cakaj)
 
