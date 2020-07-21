@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Autor Kiker
+# Autor M. Velsmid
 # verzia 1.2
 
 import time
@@ -7,13 +7,13 @@ import sys
 sys.path.append('/storage/.kodi/addons/virtual.rpi-tools/lib')
 import RPi.GPIO as GPIO
 
-Teplotamin=50  #minimalna nastavena teplota /ventilator nepojde ak bude nizsia
-pin = 4        #nastavenie pinu BCM
-cakaj = 14      #nastavenie opakovania kontroly teploty
-Hz = 35        #frekvencia PWM
-advanc = 1     # 0 vypnute - 1 zapnute  /znizenie teploty na minimalnu
-R = 3          # rozdiel v minimalne nastavenej teplote od vychladenia /ak je zapnute advanc   
-RT = 30        # cas v sekundach na porovnanie teploty
+Teplotamin=50  # setup min. temerature / minimalna nastavena teplota /ventilator nepojde ak bude nizsia
+pin = 4        # set pin BCM / nastavenie pinu BCM
+cakaj = 14     # repeat control temerature / nastavenie opakovania kontroly teploty
+Hz = 35        # frekquency PWM / frekvencia PWM
+advanc = 1     # 0 off - 1 on  /decrease of temperature to min. / 0 vypnute - 1 zapnute  /znizenie teploty na minimalnu
+R = 3          # difference min. temepratre from cooling down  -it must be turned on advanc / rozdiel v minimalne nastavenej teplote od vychladenia -ak je zapnute advanc   
+RT = 30        # time in seconds to re-compare the temperature / cas v sekundach na porovnanie teploty
 
 # konfiguracia 
 
