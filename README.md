@@ -13,7 +13,7 @@ A script for controlling the fan was started via autoexec,py. So it won't work l
 The solution is to create an addon that will run this script.
 Create a new folder service.autoexec in the addons folder
 
-1. create a new addon.xml file with the content (for read line, open in notepad,pspad...):
+1. create a new addon.xml file with the content (click up on <> or RAW to display the following lines):
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="service.autoexec" name="Autoexec Service" version="1.0.0" provider-name="name">
