@@ -36,7 +36,8 @@ Create a new folder service.autoexec in the addons folder
 import xbmc
 xbmc.executebuiltin("RunScript(/storage/.kodi/userdata/fanpwm.py)")
 
-3.in the fanpwm.py file, edit the number line   
+3.in the fanpwm.py file, delete line 7 ior edit line to: #sys.path.append('/storage/.kodi/addons/virtual.rpi-tools/lib')
+  
 
  
 
