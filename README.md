@@ -38,11 +38,6 @@ xbmc.executebuiltin("RunScript(/storage/.kodi/userdata/fanpwm.py)")
 
 3.in the fanpwm.py file, delete line 7 ior edit line to: #sys.path.append('/storage/.kodi/addons/virtual.rpi-tools/lib')
   
-
- 
-
-
-
 4. In the userdata folder, put the script fanpwm.py
 5. from the repository (Libreelec Add-ons) install Raspberry Tools (RPi.GPIO)
 6. reboot the RPi
