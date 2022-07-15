@@ -6,7 +6,7 @@ PWM Fan Cooler - latest version 1.2 (21.7.2020)
 2. Coppy files to Rpi Folder: /storage/.kodi/userdata
 3. reboot Rpi
 
-for LibreELEC 10.0.1 and up:
+# for LibreELEC 10.0.1 and up:
 
 Since version 10.0.1, LibreElec canceled the automatic execution of the autoexec.py script from the userdata folder.
 A script for controlling the fan was started via autoexec,py. So it won't work like that in the new LE versions.
@@ -36,11 +36,16 @@ Create a new folder service.autoexec in the addons folder
 import xbmc
 xbmc.executebuiltin("RunScript(/storage/.kodi/userdata/fanpwm.py)")
 
-3. In the userdata folder, put the script fanpwm.py
+3.in the fanpwm.py file, edit the number line   
 
-4. from the repository (Libreelec Add-ons) install Raspberry Tools (RPi.GPIO)
-5. reboot the RPi
-6. go to my add-ons and enable Autoexec Service
+ 
+
+
+
+4. In the userdata folder, put the script fanpwm.py
+5. from the repository (Libreelec Add-ons) install Raspberry Tools (RPi.GPIO)
+6. reboot the RPi
+7. go to my add-ons and enable Autoexec Service
 
 
 
